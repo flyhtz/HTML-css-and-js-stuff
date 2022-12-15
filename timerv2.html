@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timer</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        text-align: center;
+      }
+
+      #timer {
+        font-size: 48px;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Timer</h1>
+    <p id="timer"></p>
+    <script>
+      var countDownSeconds = 20;
+
+      var youtubeUrl = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+
+      var timerElement = document.getElementById("timer");
+
+      setInterval(function() {
+        countDownSeconds--;
+
+        timerElement.innerHTML = countDownSeconds;
+
+        if (countDownSeconds == 0) {
+          window.open(youtubeUrl);
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>

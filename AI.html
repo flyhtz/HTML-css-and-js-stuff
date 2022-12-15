@@ -74,6 +74,20 @@
   }
 </script>
 
+<h1>Chat Box (for when u want to talk to someone smart)</h1>
+  
+<input type="text" id="chat-input" />
+<h2 style="font-size: 100px;" id="chat-output"></h2>
+
+<script>
+  var input = document.getElementById("chat-input");
+  var output = document.getElementById("chat-output");
+  
+  input.addEventListener("keyup", function() {
+    output.innerHTML = input.value;
+  });
+</script>
+
 <h1>Counter</h1>
 <p id="clock"></p>
 <script>
@@ -92,3 +106,21 @@
     counterElement.innerHTML = count;
   }, 1000);
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); height: 100px; width: 100%;"></div>
+
+<div style="background: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet); height: 100%; width: 100px;"></div>

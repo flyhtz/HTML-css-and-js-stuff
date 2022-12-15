@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<body>
+  <h1>Chat Box</h1>
+  
+  <input type="text" id="chat-input" />
+  <h2 id="chat-output"></h2>
+  
+  <script>
+    var input = document.getElementById("chat-input");
+    var output = document.getElementById("chat-output");
+    
+    input.addEventListener("keyup", function() {
+      output.innerHTML = input.value;
+    });
+  </script>
+
+<h1>Chat Box</h1>
+  
+  <input type="text" id="chat-input2" />
+  <button id="submit-button">Submit</button>
+  <h2 id="chat-output2"></h2>
+  
+  <script>
+    var input2 = document.getElementById("chat-input2");
+    var button = document.getElementById("submit-button");
+    var output2 = document.getElementById("chat-output2");
+    
+    button.addEventListener("click", function() {
+      output2.innerHTML = input2.value;
+    });
+  </script>
+</body>
